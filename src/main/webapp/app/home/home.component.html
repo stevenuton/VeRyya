@@ -1,44 +1,293 @@
 <div class="row">
-    <div class="col-md-3">
-        <span class="hipster img-fluid rounded"></span>
+    <!-- 簡介 -->
+    <div class="header">
+        <section class="presentation" ID="introduction">
+            <div class="introduction">
+                <div class="intro-text">
+                    <h1>基因組-生物的終極邊疆</h1>
+                    <p>Genome: the final frontier. These are the voyages of the Project Opportunity .
+                        Its continuing mission: from sequence to consequence. To seek out new models
+                        and new markers. To boldly go where no one has gone before!
+                    </p>
+                    <h2>基育生技的使命要在經濟物種的範疇從基因到性狀探勘新的基因標誌建立性能關聯模型，成為台灣精準農業的先行者</h2>
+                </div>
+                <div class="cta">
+                    <button class="cta-select"><a class="nav-select" href="#about">公司介紹</a></button>
+                    <button class="cta-add"><a class="nav-add" href="#contact">聯絡我們</a></button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <div class="sneaker">
+                        <div class="circle"></div>
+                        <img src="../../content/images/home/OPPTYlogo.png" alt="logo">
+                    </div>
+                    <div class="info">
+                        <h1 class="title">顥智聯科技</h1>
+                    </div>
+                </div>
+            </div>
+            <!--            <script type="text/javascript" src="../../app/shared/js/app.js"></script>-->
+        </section>
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+        <!--Waves end-->
     </div>
 
-    <div class="col-md-9">
-        <h1 class="display-4" jhiTranslate="home.title">Welcome, Java Hipster!</h1>
-
-        <p class="lead" jhiTranslate="home.subtitle">This is your homepage</p>
-
-        <div [ngSwitch]="isAuthenticated()">
-            <div class="alert alert-success" *ngSwitchCase="true">
-                <span id="home-logged-message" *ngIf="account" jhiTranslate="home.logged.message"
-                    [translateValues]="{ username: account.login }">You are logged in as user "{{ account.login }}".</span>
+    <div class="about">
+        <section class="presentation" ID="about">
+            <video autoplay muted loop>
+                <source src="/content/images/home/world.mp4" type="video/mp4">
+            </video>
+            <div class="introduction">
+                <div class="intro-text">
+                    <h4>立足台灣．放眼全球</h4>
+                    <h5>
+                        基育生技於109年10月正式從母公司基龍米克斯生物科技獨立出來，為因應產業發展趨勢，強調專業經營模式，以提高集團整體經營績效，藉由本次分割，基育生技將專注於農業基因體研發之相關業務，基育生技未來將致力推動精準農業，整合農業大數據及基因資料庫，開發相關檢測技術並落實研發成果，將成果應用在重要經濟物種上。<br>
+                        本公司將持續投入：1) 多基因檢測模組開發、 2)客製化農業檢測晶片生產投資及 3) 農業預測模型服務整體商業化等，目標成為台灣農業的基因體服務中心，擴展高通量基因型鑑別、性能預測等技術的影響層面到畜產、水產、花卉、種苗、微生物檢疫等領域，逐步建立以農業基因體資訊為核心的全方位能量，由設計、製造、分析、乃至應用等各層面，期許建立以基因體資訊為本的生技藍海，立足台灣放眼全球，朝向精準農業領域尋求突破與精進，成為亞太農業基因體中心。
+                    </h5>
+                </div>
             </div>
+            <!--<script src="../../app/shared/js/app.js"></script>-->
+        </section>
+    </div>
 
-            <div class="alert alert-warning" *ngSwitchCase="false">
-                <span jhiTranslate="global.messages.info.authenticated.prefix">If you want to </span>
-                <a class="alert-link" (click)="login()" jhiTranslate="global.messages.info.authenticated.link">sign in</a><span jhiTranslate="global.messages.info.authenticated.suffix">, you can try the default accounts:<br/>- Administrator (login="admin" and password="admin") <br/>- User (login="user" and password="user").</span>
-            </div>
-
-            <div class="alert alert-warning" *ngSwitchCase="false">
-                <span jhiTranslate="global.messages.info.register.noaccount">You don't have an account yet?</span>&nbsp;
-                <a class="alert-link" routerLink="account/register" jhiTranslate="global.messages.info.register.link">Register a new account</a>
-            </div>
+    <!-- 技術背景 -->
+    <section class="#1" ID="technology">
+        <div class="technology-content">
+            <p>本公司研究團隊於2018年執行經濟部產業升級創新輔導平台計畫，與畜產試驗所等產官學研單位合作共同開發台灣豬全基因性能檢定平台，透過此計畫的執行本團隊累積了次世代定序技術、資料分析及相關應用技術開發之經驗。
+                <br>
+                <br>
+                以此為基礎本公司核心技術主要分為三大項：
+            </p>
         </div>
 
-        <p jhiTranslate="home.question">
-            If you have any question on JHipster:
-        </p>
+        <!-- 技術研究卡片一：(1)全基因組定序平台 -->
+        <div class="introduction1">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../../content/images/home/card1.png" alt="全基因組定序平台" >
+                        <h3>全基因組定序平台</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-card-content">
+                            <h4>1．全基因組定序平台</h4>
+                            <p>此定序平台為消費者提供簡單方便的樣品送件至DNA分析流程，消費者只需要收集樣品血液或組織，並透過線上送件系統登錄即可完成送樣，待實驗室收到樣品後透過本計畫開發之全基因組定序平台，從DNA萃取、定序前樣品製備、品質分析、上機定序或晶片分析等，達到基因型鑑定之目的。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <ul>
-            <li><a href="https://www.jhipster.tech/" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.homepage">JHipster homepage</a></li>
-            <li><a href="http://stackoverflow.com/tags/jhipster/info" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.stackoverflow">JHipster on Stack Overflow</a></li>
-            <li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.bugtracker">JHipster bug tracker</a></li>
-            <li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.chat">JHipster public chat room</a></li>
-            <li><a href="https://twitter.com/jhipster" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.follow">follow @jhipster on Twitter</a></li>
-        </ul>
+            <!-- 技術研究卡片二：(2)關聯性分析與機器學習平台 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../../content/images/home/card2.png" alt="全基因組定序平台" >
+                        <h3>關聯性分析與機器學習平台</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-card-content">
+                            <h4>2．關聯性分析與機器學習平台</h4>
+                            <p>全基因組定序或是全基因組單基因多型性晶片定序的結果，除了得到基因型的數據外，亦可以導入本計畫開發之關聯性分析與機器學習平台，將樣品的基因型數據與本分析平台的數據比對，在實驗室收到樣品的三周內，即可透過系統的運算進而預測樣品的各項性狀數值(如:生長、肉質或繁殖)，提供給消費者作為育種篩選的參考指標。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <p>
-            <span jhiTranslate="home.like">If you like JHipster, don't forget to give us a star on</span> <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer" jhiTranslate="home.github">GitHub</a>!
-        </p>
+            <!-- 技術研究卡片三：(3)遺傳資料庫開發 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="../../content/images/home/card3.png" alt="全基因組定序平台" >
+                        <h3>遺傳資料庫開發</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="flip-card-content">
+                            <h4>3．遺傳資料庫開發 </h4>
+                            <p>基因體定序與資料分析會產生大量的數據，為有效管理這些基因體數據，並整合生物標記產出與原有的基因體註解資料，結合成為資料較為豐富的特有資料庫系統是本公司致力開發的核心技術之一，透過帳號密碼權限控管或指定連線位置的方式，提供國內學研單位或產業界使用，以協助台灣智慧農業於基因體應用領域的技術開發與資料管理使用。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end 技術背景  -->
+
+    <!-- 營業項目 -->
+    <div class="world">
+        <section class="presentation" ID="business">
+            <div class="introduction">
+                <div class="intro-text">
+                    <h6>營業項目</h6>
+                </div>
+                <div class="centerflipcards">
+                    <div class="square-flip">
+                        <div class="square">
+                            <div class="square-container">
+                                <div class="align-center"></div>
+                                <h2 class="textshadow">生產服務</h2>
+                            </div>
+                            <div class="flip-overlay"><img src="../../content/images/home/square1.jpg" class="boxshadow" alt=""></div>
+                        </div>
+                        <div class='square2'>
+                            <div class="square-container2">
+                                <div class="align-center"></div>
+                                <h3>漁電創生</h3>
+                                <h3>畜電創生</h3>
+                                <h3>種原示範場域</h3>
+                                <a href="https://howlife.cna.com.tw/life/20200728s008.aspx" target="_blank" class="boxshadow kallyas-button">瞭解更多</a>
+                            </div>
+                            <div class="flip-overlay"></div>
+                        </div>
+                    </div>
+
+                    <div class="square-flip">
+                        <div class='square'>
+                            <div class="square-container">
+                                <h2 class="textshadow">技術服務</h2>
+                            </div>
+                            <div class="flip-overlay"><img src="../../content/images/home/square2.jpg" class="boxshadow" alt=""></div>
+                        </div>
+                        <div class='square2'>
+                            <div class="square-container2">
+                                <div class="align-center"></div>
+                                <h3>農業基因體檢測服務</h3>
+                                <h3>功能醫學檢測</h3>
+                                <h3>孕前產前檢測服務</h3>
+                                <a href="https://ec.ltn.com.tw/article/breakingnews/3241452" target="_blank" class="boxshadow kallyas-button">瞭解更多</a>
+                            </div>
+                            <div class="flip-overlay"></div>
+                        </div>
+                    </div>
+
+                    <div class="square-flip">
+                        <div class='square'>
+                            <div class="square-container">
+                                <h2 class="textshadow">研究開發</h2>
+                            </div>
+                            <div class="flip-overlay"><img src="../../content/images/home/square3.jpg" class="boxshadow" alt=""></div>
+                        </div>
+                        <div class='square2'>
+                            <div class="square-container2">
+                                <div class="align-center"></div>
+                                <h3>水產育種晶片</h3>
+                                <h3>豬育種晶片2.0</h3>
+                                <h3>單基因檢測試紙</h3>
+                                <a href="https://www.chinatimes.com/realtimenews/20200727003970-260410?chdtv" target="_blank" class="boxshadow kallyas-button">瞭解更多</a>
+                            </div>
+                            <div class="flip-overlay"></div>
+                        </div>
+                    </div>
+
+                    <div class="square-flip">
+                        <div class='square'>
+                            <div class="square-container">
+                                <h2 class="textshadow">未來鏈結</h2>
+                            </div>
+                            <div class="flip-overlay"><img src="../../content/images/home/square4.jpg" class="boxshadow" alt=""></div>
+                        </div>
+                        <div class='square2'>
+                            <div class="square-container2">
+                                <div class="align-center"></div>
+                                <h3>種原基因型資料管理平台</h3>
+                                <h3>飼料、疾病/環境檢測</h3>
+                                <h3>生產履歷認證</h3>
+                                <a href="https://finance.ettoday.net/news/1770575" target="_blank" class="boxshadow kallyas-button">瞭解更多</a>
+                            </div>
+                            <div class="flip-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+
+    <!-- 聯絡我們 -->
+    <section class="presentation" ID="contact">
+        <div class="introduction">
+            <div class="intro-text">
+                <h6>聯絡我們</h6>
+                <h3>
+                    顥智聯科技股份有限公司<br>
+                    地址： 臺北市中山區南京東路二段132號9樓之1<br>
+                    Tel: <br>
+                    Fax: <br>
+                </h3>
+            </div>
+        </div>
+        <div class="container-email">
+            <form action="https://script.google.com/macros/s/AKfycbwxxSla09dNvdFkxwuKL3zpVd0L9wIMRPicaeII8yll4GqoXfbj/exec" method="POST">
+
+                <div class="row">
+                    <div class="form-group">
+                        <div for="name">姓名：</div>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <div for="phone">電話：</div>
+                        <input type="text" id="phone" name="phone">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <div for="email">Email：</div>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <div for="fax">傳真：</div>
+                        <input type="fax" id="fax" name="fax">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <div for="company">公司/醫院/單位名稱：</div>
+                        <input type="company" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <div for="ask">詢問：</div>
+                        <select type="ask" id="ask" name="ask">
+                            <option>請選擇詢問項目?</option>
+                            <option>生產服務</option>
+                            <option>技術服務</option>
+                            <option>研究開發</option>
+                            <option>未來鏈結</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group1">
+                        <div for="message">問題與建議：</div>
+                        <textarea name="message" id="message" cols="30" rows="8"></textarea>
+                    </div>
+                </div>
+
+                <button class="button-success pure-button button-xlarge" type="submit"><i class="fa fa-paper-plane"></i>&nbsp;寄送您的意見</button>
+                <!-- Customise the Thankyou Message People See when they submit the form: -->
+                <div class="thankyou_message" style="display:none;">
+                    <h2><em>感謝</em> 您與我們聯繫!
+                        我們將會盡快給予答覆!</h2>
+                </div>
+                <!--                <script data-cfasync="false" src="form-submission-handler.js"></script>-->
+            </form>
+        </div>
+    </section>
 </div>
